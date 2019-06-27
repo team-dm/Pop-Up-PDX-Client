@@ -2,7 +2,33 @@
   text-align: center;
 }
 
-.popUpList {
-  
+.popUpList ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
+.popUpList li {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: initial;
+  grid-column-gap: 0.5em;
+  border: solid 3px red;
+  width: 50%;
+  margin: 0.5em;
+  overflow: hidden;
+}
+.popUpList a {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.popUpList img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.popUpList img:hover {
+  opacity: 0.5;
+}
